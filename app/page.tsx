@@ -1,14 +1,20 @@
+"use client"
+import { useRouter } from "next/navigation";
+
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-black text-white font-sans">
+    <div className="flex min-h-screen items-center justify-center bg-white text-gray-900 font-sans">
       <main className="flex flex-col items-center justify-center w-full max-w-4xl py-32 px-6">
+
         {/* Logo */}
-        <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-bold tracking-tight text-[#0851FF]">
           MemeLend
         </h1>
 
         {/* Tagline */}
-        <p className="mt-4 max-w-xl text-center text-lg text-zinc-400">
+        <p className="mt-4 max-w-xl text-center text-gray-600">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           aliquet mauris vel sapien varius, at hendrerit purus luctus. Sed
           euismod nunc et tortor ultricies, vitae facilisis augue accumsan.
@@ -16,34 +22,37 @@ export default function Home() {
 
         {/* Call to action */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <button className="px-8 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition font-medium">
-            Connect Wallet
+          <button
+            className="px-8 py-3 rounded-xl bg-[#0851FF] text-white hover:bg-blue-600 transition font-medium"
+            onClick={() => router.push("/deposit-lend")}
+          >
+            Get Started
           </button>
 
-          <button className="px-8 py-3 rounded-xl border border-zinc-700 hover:bg-zinc-900 transition font-medium">
-            Explore Markets
+          <button className="px-8 py-3 rounded-xl border border-gray-300 hover:bg-gray-100 transition font-medium">
+            Connect Wallet
           </button>
         </div>
 
         {/* Feature cards */}
         <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
-          <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-purple-600 transition">
+          <div className="p-6 rounded-2xl bg-white border border-[#0851FF] hover:bg-[#e6f0ff] transition">
             <h3 className="text-xl font-semibold mb-2">Lorem ipsum dolor</h3>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-gray-600 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-purple-600 transition">
+          <div className="p-6 rounded-2xl bg-white border border-[#0851FF] hover:bg-[#e6f0ff] transition">
             <h3 className="text-xl font-semibold mb-2">Lorem ipsum dolor</h3>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-gray-600 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-purple-600 transition">
+          <div className="p-6 rounded-2xl bg-white border border-[#0851FF] hover:bg-[#e6f0ff] transition">
             <h3 className="text-xl font-semibold mb-2">Lorem ipsum dolor</h3>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-gray-600 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
