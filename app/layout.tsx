@@ -13,8 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MemeLend — Decentralized Meme Token Lending",
-  description: "A Web3 platform where users can deposit USD and lend meme tokens for trading.",
+  title: "Transmute Finance — Decentralized Meme Token Lending",
+
+  description:
+    "A Web3 platform where users can deposit USD and lend meme tokens for trading.",
 };
 export default function RootLayout({
   children,
